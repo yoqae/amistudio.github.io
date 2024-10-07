@@ -42,22 +42,6 @@ p {
     font-size: 1.1em;
 }
 
-.join-btn {
-    padding: 12px 25px;
-    border: none;
-    background-color: #ff5e57;
-    color: white;
-    border-radius: 10px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.join-btn:hover {
-    background-color: #ff4c4a;
-    transform: scale(1.05);
-}
-
 .icons {
     display: flex;
     justify-content: space-around;
@@ -85,12 +69,12 @@ p {
 
 .animated-text {
     display: inline-block;
-    animation: colorChange 3s infinite alternate; /* Animation hinzufügen */
+    animation: colorChange 3s infinite alternate;
 }
 
 @keyframes colorChange {
     0% { color: #ff5e57; }
-    100% { color: #57ff5e; } /* Wechselt zwischen zwei Farben */
+    100% { color: #57ff5e; }
 }
 
 .hidden {
