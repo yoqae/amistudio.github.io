@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Hintergrundbild.jpg');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #ffffff;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.menu button:hover {
+    transform: scale(1.2);
+    color: #ff5e57;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 60px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    animation: fadeIn 0.5s ease; /* Animation when entering the page */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.icons a, .icons button {
+    background-color: transparent;
+    border: none;
+    font-size: 2.5em;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icons a:hover, .icons button:hover {
+    transform: scale(1.2);
+    color: #ff5e57;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-message, #news-message {
+    position: fixed;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    animation: fadeInOut 3s ease;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .menu button {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .menu button {
+        font-size: 0.9em;
+    }
+}
